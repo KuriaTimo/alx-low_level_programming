@@ -12,25 +12,20 @@
 
 int print_sign(int n)
 {
-	char positive, negative, zero;
-
-	positive = '+';
-	negative = '-';
-	zero = '0';
-
+	
 	if (n > 0)
 	{
-		_putchar(positive);
+		_putchar('+');
 		return (1);
 	}
 	else if (n == 0)
 	{
-		_putchar(zero);
+		_putchar('0');
 		return (0);
 	}
 	else
 	{
-		_putchar(negative);
+		_putchar('-');
 		return (0);
 	}
 }
