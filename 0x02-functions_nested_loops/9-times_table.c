@@ -26,7 +26,7 @@ void times_table(void)
 
 		while (j <= 9)
 		{
-			result = num1[i] * num2[j]
+			result = num1[i] * num2[j];
 			first_digit = result / 10;
 			last_digit = result % 10;
 			if (j != 0)
