@@ -1,26 +1,27 @@
-#include "main.h"
+nclude "main.h"
 
 /**
-  * print_times_table - prints the times table
-  * Description: Prints the times table
-  * @n: integer
-  * Return: void
+  *main:  print_times_table - prints the times table
+  *
+  * @n: integer for which the times table will be printed
+  *
+  * Description: prints the times table
+  *
+  *Return: void
   */
 
 void print_times_table(int n)
 {
 	int row, column, product;
 
-	n = 0;
 	if (n >= 0 && n < 15)
 	{
-		row = 0;
-		while (row <= n)
+		for (row = 0; row <= n; row++)
 		{
-			column = 0;
-			while (column <= n)
+			for (column = 0; column <= n; column++)
 			{
 				product = row * column;
+
 				if (column == 0)
 					_putchar('0');
 				else if (product < 10)
@@ -47,11 +48,7 @@ void print_times_table(int n)
 					_putchar((product / 10) % 10 + '0');
 					_putchar(product % 10 + '0');
 				}
-				column++;
 			}
 			_putchar('\n');
-			row++;
-		}
-	}
+		}									}
 }
-
