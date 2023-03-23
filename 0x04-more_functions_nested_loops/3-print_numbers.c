@@ -4,18 +4,20 @@
   * print_numbers - prints numbers
   *
   * Description: Prints the numbers from 0-9
-  * @c:
   *
   * Return: Void
   */
 
 void print_numbers(void)
 {
-	int c;
+	int i;
 
-	for (c = '0'; c <= '9'; c++)
+	i = 0;
+
+	while (i < 10)
 	{
-		_putchar(c);
+		_putchar(i);
+		i++;
 	}
 	_putchar('\n');
 
