@@ -17,6 +17,6 @@ void print_rev(char *s);
 
 void rev_string(char *s);
 
-void puts(char *str);
+void puts22(char *str);
 
 #endif /*MAIN_H*/
