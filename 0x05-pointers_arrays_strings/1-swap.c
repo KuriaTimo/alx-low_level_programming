@@ -2,7 +2,7 @@
 
 /**
   * swap_int - swaps value of int
-  * 
+  *
   * Description:
   *
   * @a: pointer
